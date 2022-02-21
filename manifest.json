@@ -1,0 +1,27 @@
+{
+  "name": "Chrome Navigator",
+  "description": "Simple Chrome Extension for navigation to uri",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting", "tabs", "background"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/compass_16.png",
+      "32": "/images/compass_32.png",
+      "48": "/images/compass_48.png",
+      "128": "/images/compass_128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/compass_16.png",
+    "32": "/images/compass_32.png",
+    "48": "/images/compass_48.png",
+    "128": "/images/compass_128.png"
+  },
+  "options_page": "options.html",
+  "incognito": "split"
+}
